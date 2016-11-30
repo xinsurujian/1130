@@ -1,0 +1,10 @@
+{
+  "errcode": 0,
+  "errmsg": "",
+  "data":{
+  	 "id":"55",
+     "imgsrc":"/footballApp/images/img1.jpg",
+     "title":"樱桃小丸子",
+     "description":"樱桃小丸子樱桃小丸子樱桃小丸子樱桃小丸子"
+  }
+}

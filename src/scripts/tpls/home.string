@@ -1,0 +1,66 @@
+<div class="m-home">
+   <header>
+        <ul>
+          <li class="yo-ico menu">&#xe745;</li>
+          <li>
+             <ul id="title">
+              <li class="active">热点</li>
+              <li>关注</li>
+             </ul>
+          </li>
+          <li class="yo-ico sm">&#xe684;</li>
+        </ul>
+    </header>
+    <div class="home-section">
+        <div class="swiper-container" id="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-flex">
+                <nav>
+                   <ul id="nav">
+                      <li ms-repeat-li="nav" action-type="tap.slide" ms-class-active="$index==0">{{li}}</li>
+                   </ul>
+                </nav>
+                <div class="section-content">
+                  <div class="swiper-container" id="swiper-main">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                          <div class="home-scroll" spa-widget="scroll" data-scroll-id="homeListScroll">
+                              <div class="scroller">
+                                 <div class="head">
+                                     <img src="/footballApp/images/arrow.png" alt="">
+                                     <span>下拉刷新</span>
+                                  </div>
+                                  <ul ms-repeat-obj="livedata">
+                                     <li>
+                                        <img ms-src="obj[0].img">
+                                        <b ms-text="obj[0].title"></b>
+                                     </li>
+                                     <li></li>
+                                     <li ms-class-hide="!obj[1]">
+                                        <img ms-src="obj[1].img">
+                                        <b>{{obj[1].title}}</b>
+                                     </li>
+                                   </ul>
+                                   <div class="foot">
+                                      <img src="/footballApp/images/arrow.png" alt="">
+                                      <span>上拉加载</span>
+                                   </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                      </div>
+                      <div class="swiper-slide">
+                          足球美女...
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                关注......
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
